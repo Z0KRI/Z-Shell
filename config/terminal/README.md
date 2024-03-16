@@ -1,4 +1,4 @@
-<h3>4. Los pasos de instalación de Oh My Posh están en: <a href="https://ohmyposh.dev">https://ohmyposh.dev</a></h3>
+<h3>4. Los pasos de instalación de Oh My Posh están en: https://ohmyposh.dev</h3>
 
 <p>1. Primero se debe de crear el $PROFILE usando el siguiente comando:</p>
 
