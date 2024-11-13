@@ -9,7 +9,7 @@
           "properties": {
             "cache_duration": "none"
           },
-          "template": "<#CB4B16>\u250f[</>{{ .UserName }}@DEDSEC-DESKTOP<#CB4B16>]</>",
+          "template": "<#CB4B16>\u250f[</> {{ .UserName }}@DEDSEC-DESKTOP<#CB4B16> ]</>",
           "foreground": "#ffffff",
           "type": "session",
           "style": "plain"
@@ -40,6 +40,17 @@
           "foreground": "#ffffff",
           "type": "git",
           "style": "plain"
+        },
+        {
+          "type": "battery",
+          "style": "powerline",
+          "template": "{{ if not .Error }}<#CB4B16>-[</> {{if .Icon }}{{.Icon}}{{else if ge .Percentage 80}}\udb80\udc81{{else if ge .Percentage 50}}\udb80\udc7f{{else if ge .Percentage 10}}\udb80\udc7a{{else if ge .Percentage 5}}\udb80\udc7b{{else}}<#ff5722>\udb80\udc83</>{{end}} {{ .Percentage }}{{ end }}% <#CB4B16>]</>",
+          "properties": {
+            "discharging_icon": "",
+            "charging_icon": "<#f2d520>\udb80\udc84</>",
+            "charged_icon": "<#4caf50>\udb85\udfe2</>",
+            "not_charging_icon": "\udb84\ude5d"
+          }
         }
       ]
     },
